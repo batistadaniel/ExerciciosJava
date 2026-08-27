@@ -1,27 +1,24 @@
-// Aluno: Daniel Batista
-// ADS-MAT 3A
+package Aula2;
 
 import java.util.Scanner;
 
-public class Exercicio1 {
+public class Correcao {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
-
-        System.out.println("---------- Cadastro ----------");
-
-        System.out.print("Digite seu nome: ");
+        System.out.println("Cadastro de usuarios");
+        System.out.println("Informe o nome: ");
         String nome = teclado.nextLine();
-        System.out.print("Digite seu endereco: ");
+        System.out.print("Informe o endereco: ");
         String endereco = teclado.nextLine();
-        System.out.print("Digite seu telefone fixo: ");
+        System.out.print("Informe o telefone fixo: ");
         String telefoneFixo = teclado.nextLine();
-        System.out.print("Digite seu telefone celular: ");
+        System.out.print("Informe o celular: ");
         String  telefoneCelular = teclado.nextLine();
-        System.out.print("Digite seu email: ");
+        System.out.print("Informe o email: ");
         String email = teclado.nextLine();
 
         if (nome.isEmpty() || endereco.isEmpty() || telefoneFixo.isEmpty() || telefoneCelular.isEmpty() || email.isEmpty()) {
-            System.out.print("Algum campo esta vazio! Responda novamente.");
+            System.out.print("Preencha todas as informacoes!");
         } else if (telefoneFixo.equals(telefoneCelular)){
             System.out.print("Telefone fixo igual ao celular! Responda novamente.");
         } else if (!email.contains("@") || !email.contains(".com")){
