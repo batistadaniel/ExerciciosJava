@@ -28,6 +28,7 @@ public class Main {
             int opcao = teclado.nextInt();
 
             if (opcao == 2){
+                System.out.println("Sistema encerrado!");
                 break;
             }
         }
