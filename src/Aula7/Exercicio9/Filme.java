@@ -1,4 +1,4 @@
-package Aula7;
+package Aula7.Exercicio9;
 
 public class Filme {
     String nomeFilme;

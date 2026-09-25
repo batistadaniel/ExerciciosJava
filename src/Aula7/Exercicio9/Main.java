@@ -1,11 +1,11 @@
-    package Aula7;
+    package Aula7.Exercicio9;
 
     import java.util.Scanner;
 
     public class Main {
         public static void main(String[] args) {
             Filme[] filmes = new Filme[3];
-            cadastrarFilmes();
+            cadastrarFilmes(filmes);
             Scanner teclado = new Scanner(System.in);
             boolean interromper;
             int menu;
@@ -29,7 +29,7 @@
                         if (assistirFilme(filmes, teclado)) {
                             interromper = true;
                         } else {
-                            interromper = true;
+                            interromper = false;
                         };
                         break;
                     case 3:
@@ -64,7 +64,7 @@
                             return true;
                         } else {
                             //nao pode assistir
-                            System.out.println("Iniciando " + meuFilme.nomeFilme);
+                            System.out.println("Voce nao pode ver este filme por conta da idade!");
                             return false;
                         }
                     }
@@ -84,7 +84,7 @@
             }
         }
 
-        private static void cadastrarFilmes() {
+        private static void cadastrarFilmes(Filme[] filmes  ) {
             Filme meuFilme = new Filme();
 
             meuFilme.nomeFilme = "Filme 1";
@@ -97,7 +97,7 @@
 
             filme2.nomeFilme = "Filme 2";
             filme2.classificacao = 12;
-            filme2.codigo = 1;
+            filme2.codigo = 2;
             filme2.genero = "nome genero";
             filme2.duracaoMinutos = 90;
 
@@ -105,13 +105,13 @@
 
             filme3.nomeFilme = "Filme 3";
             filme3.classificacao = 18;
-            filme3.codigo = 1;
+            filme3.codigo = 3;
             filme3.genero = "nome genero";
             filme3.duracaoMinutos = 90;
 
             filmes[0] = meuFilme;
             filmes[1] = filme2;
-            filmes[3] = filme3;
+            filmes[2] = filme3;
 
         }
 
