@@ -24,14 +24,12 @@ public class Ingresso {
 
     @Override
     public String toString() {
-        return "Ingresso{" +
-                "codigo=" + codigo +
-                ", nomeCliente='" + nomeCliente + '\'' +
-                ", nomeEvento='" + nomeEvento + '\'' +
-                ", valorBase=" + valorBase +
-                '}';
+        return "------------------------------" +
+            "\nCodigo: " + codigo +
+            "\nNome do cliente: " + nomeCliente +
+            "\nNome do evento: " + nomeEvento +
+            "\nValor base: R$ " + valorBase;
     }
-
     public int getCodigo() {
         return codigo;
     }
