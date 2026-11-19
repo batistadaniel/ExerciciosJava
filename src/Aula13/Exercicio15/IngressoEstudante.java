@@ -18,10 +18,10 @@ public class IngressoEstudante extends Ingresso{
 
     @Override
     public String toString() {
-        return super.toString() + "IngressoEstudante{" +
-                "instituicao='" + instituicao + '\'' +
-                ", carteirinha='" + carteirinha + '\'' +
-                '}';
+        return super.toString() +
+            "\nTipo: Estudante" +
+            "\nInstituicao: " + instituicao +
+            "\nCarteirinha: " + carteirinha;
     }
 
     public String getInstituicao() {
