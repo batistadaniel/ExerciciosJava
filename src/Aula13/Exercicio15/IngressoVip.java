@@ -20,9 +20,9 @@ public class IngressoVip extends Ingresso{
     @Override
     public String toString() {
         if (temBackstage) {
-            return super.toString() + "Ingresso Vip COM BACKSTAGE";
+            return super.toString() + "\nIngresso Vip COM BACKSTAGE";
         } else {
-            return super.toString() + "Ingresso Vip SEM BACKSTAGE";
+            return super.toString() + "\nIngresso Vip SEM BACKSTAGE";
         }
 
     }
