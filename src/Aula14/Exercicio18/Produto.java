@@ -5,6 +5,7 @@ public abstract class Produto {
     // 2 - GETTERS E SETTERS
     // 3 - CONSTRUTOR
     // 4 - toString
+
     private int codigo;
     private String nome;
     private double precoBase;
