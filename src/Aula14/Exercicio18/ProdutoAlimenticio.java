@@ -1,6 +1,6 @@
 package Aula14.Exercicio18;
 
-public class ProdutoAlimenticio extends Produto{
+public class ProdutoAlimenticio extends Produto {
     private String dataValidade;
     private boolean refrigeracao;
 
@@ -18,7 +18,6 @@ public class ProdutoAlimenticio extends Produto{
         return super.toString() + "\nData de validade: " + dataValidade + "\nNao necessita de refrigeracao!";
     }
 
-
     @Override
     public double calcularPrecoFinal(int diaSemana) {
         switch (diaSemana) {
@@ -29,8 +28,24 @@ public class ProdutoAlimenticio extends Produto{
             case 3: // terca
             case 4: // quarta
                 return getPrecoBase() * 0.85;
-            default: // quinta, sexta e default
+            default: // quinta e sexta
                 return getPrecoBase();
         }
+    }
+
+    public String getDataValidade() {
+        return dataValidade;
+    }
+
+    public void setDataValidade(String dataValidade) {
+        this.dataValidade = dataValidade;
+    }
+
+    public boolean isRefrigeracao() {
+        return refrigeracao;
+    }
+
+    public void setRefrigeracao(boolean refrigeracao) {
+        this.refrigeracao = refrigeracao;
     }
 }
