@@ -1,6 +1,7 @@
+
 package Aula14.Exercicio18;
 
-public class ProdutoLimpeza extends Produto{
+public class ProdutoLimpeza extends Produto {
     private double volumeML;
     private boolean inflamavel;
 
@@ -20,7 +21,7 @@ public class ProdutoLimpeza extends Produto{
             case 5: // quinta
             case 6: // sexta
                 return getPrecoBase() * 0.8;
-            default: // sabado, domingo e default
+            default: // sabado e domingo
                 return getPrecoBase();
         }
     }
